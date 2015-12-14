@@ -1,0 +1,27 @@
+{
+	"name": "clara-violet",
+	"description": "Theme used first for the personal website of Eden Rohatensky",
+	"version": "0.0.1",
+	"type": "wordpress-theme",
+	"keywords": [],
+	"homepage": "edenrohatensky.com",
+	"license": "GPLv2.0+",
+	"authors": [
+		{
+			"name": "Eden Rohatensky",
+			"email": "edenrohatensky@gmail.com",
+		"homepage": "edenrohatensky.com",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}

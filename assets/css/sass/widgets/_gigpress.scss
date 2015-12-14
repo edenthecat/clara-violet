@@ -1,0 +1,46 @@
+// _gigpress.scss
+
+ul.gigpress-listing {
+	li {
+		padding: 3% 0;
+		a {
+			border: none;
+			display: inline;
+		}
+		&:first-child a{
+			border-top: none;
+		}
+		span {
+			&.gigpress-sidebar-date {
+				color: $secondary-color;
+				font-family: $secondary-font;
+				font-size: 20px;
+				margin-right: 1.5%;
+				padding-right: 1.5%;
+				@media(max-width: $medium) {
+					display: block;
+					border: none;
+					float: left;
+					height: 100%;
+				}		
+			}
+			&:nth-child(2), .gigpress-sidebar-prep, .gigpress-sidebar-venue {
+				display: inline;
+				font-weight: bold;			
+			}
+			&.gigpress-sidebar-status {
+				border-bottom: 1px solid $secondary-color;
+				a {
+					color: $secondary-color;
+					float: none;
+					display: block;
+					border-bottom: none;
+					font-style: italic;
+					&:after {
+						content: "»";
+					}
+				}		
+			}
+		}
+	}
+}

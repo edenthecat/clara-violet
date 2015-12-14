@@ -1,0 +1,36 @@
+// _base.scss
+
+.left-rail {
+ 	width: 30%;
+ 	float: left;
+ 	@media (max-width: $medium-medium) {
+ 		width: 100%;
+ 		clear: both;
+ 	}
+ }
+
+ .right-rail {
+ 	width: 65%;
+ 	display: inline-block;
+ 	margin-left: 5%;
+ 	overflow: hidden;
+ 	float: right;
+ 	li {
+ 		display: block;
+ 		border-bottom: 1px solid $black;
+ 		padding: 2.5% 0;
+ 		color: $black;
+ 		&:first-child{
+ 			border-top: 1px solid $black;
+ 		}
+ 	}
+ 	ul {
+ 		list-style: none;
+ 		padding: 0;
+ 	}
+ 	@media (max-width: $medium-medium) {
+ 		width: 100%;
+ 		clear: both;
+ 	}
+ }
+

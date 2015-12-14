@@ -1,0 +1,55 @@
+// _home-categories.scss
+
+.home_categories {
+	margin-bottom: 2.5%;
+	ul {
+		padding: 0;
+	}
+	li {
+		width: 30%;
+		display: inline-block;
+		height: 150px;
+		background-color: $black;
+		list-style: none;
+		margin-right: 4.63%;
+		margin-left: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			color: $white;
+			font-family: $primary-font;
+			display: block;
+			width: 100%;
+			height: 100%; 	
+			span {
+
+			}		
+		}
+		@media(max-width: $extra-large) {
+			margin-right: 4.5%;
+		}
+		@media(max-width: $medium-large) {
+			margin-right: 4.4%;
+		}
+		@media(max-width: $medium-medium) {
+			display: block;
+			margin: 1.5% 0;
+			width: 100%;
+		}
+	}
+}
+
+
+.menu-front_page-container li a span {
+	position: relative;
+	top: 110px;
+	left: 5px;
+	font-size: 25px;
+	@media(max-width: $medium-large) {
+		font-size: 20px;
+	}
+}
+
+//medium medium
+

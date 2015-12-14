@@ -1,0 +1,62 @@
+//_base.scss
+
+//WooCommerce-specific CSS
+
+h1.page-title, h1.product_title.entry-title {
+	font-family: $primary-font;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+.page-description, .page-title, h1.product_title.entry-title, .item-description {
+	width: 30%;
+	float: left;
+	clear: left;
+	display: inline-block;
+}
+
+.page-description, .item-description, #tab-description p {
+	font-size: 12px;
+}
+
+.images {
+	width: 60%;
+	margin-left: 10%;
+	float: right;
+}
+.description_tab, .reviews_tab {
+	display: none !important;
+}
+
+.products {
+	width: 60%;
+	margin-left: 37%;
+	li {
+		list-style: none;
+		margin-left: 0;
+		margin-right: 10%;
+		display: inline-block;
+		&:nth-child(2n) { margin-right: 0%; }
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: 13px;
+		color: $black;
+		border-top: 1px solid $black;
+		margin-top: 0px;
+		font-family: $secondary-font;
+		padding-top: 5px;
+	}
+	.price {
+		color: $secondary-color;
+		font-size: 25px;
+		font-weight: 400;
+		font-family: $secondary-font;
+		display: inline-block;
+		position: relative;
+		top: -30px;
+	}
+	.add_to_cart_button {
+		display: none;
+	}
+}

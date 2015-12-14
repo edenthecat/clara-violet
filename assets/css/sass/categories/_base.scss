@@ -1,0 +1,66 @@
+// _base.scss
+
+ .cat-description {
+ 	float: left;
+ 	width: 30%;
+ 	padding-right: 5%;
+ 	p {
+ 		font-size: 12px;
+ 		@media (max-width: $medium) {
+ 			font-size: 14px;
+ 		}
+ 	}
+ 	@media (max-width: $medium) {
+ 		float:none;
+ 		display: block;
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+ }
+
+ .cat-roll {
+ 	float: left;
+ 	width: 65%;
+ 	@media (max-width: $medium) {
+ 		float: none;
+ 		display: block;
+ 		width: 100%;
+ 	}
+ }
+
+ .single-cat-item {
+ 	height: 300px;
+ 	background-color: $secondary-color;
+ 	background-position: center;
+ 	margin-bottom: 2.5%;
+ 	@media (max-width: $medium) {
+ 		height: 200px;
+ 	}
+ }
+
+ a .single-cat-item h2 {
+ 	color: $white;
+ 	text-decoration: none;
+ 	background-color: $black;
+ 	display: inline;
+ 	position: relative;
+ 	top: 20px;
+ 	left: 20px;
+ 	font-size: 25px;
+ 	padding: 10px 20px;
+ 	line-height: 55px;
+ }
+
+ .cat-description {
+	ul {
+    	list-style-type: none;
+    	padding: 0;
+    	li {
+    margin: 2.5% 0;
+    	a {
+    		color: $secondary-color;
+    		&:hover { border-bottom: 1px solid $secondary-color; }
+    	}
+    }
+    }
+}

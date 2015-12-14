@@ -1,0 +1,170 @@
+//entry styles
+
+.entry-content {
+	p {
+		padding: 0 15%;
+		font-size: 20px;
+		a {
+			font-weight: 600;
+			color: $secondary-color;
+			border-bottom: 1px solid $secondary-color;
+		}
+	}
+	h1, h2, h3 {
+		text-align: center;
+	}
+	h4, h5, h6 {
+		padding: 0 15%;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	h3 {
+		font-size: 30px;
+		font-weight: 400;
+		color: $secondary-color;
+	}
+	h4 {
+		font-size: 25px;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+		font-family: $primary-font;
+		font-weight: 100;
+	}
+	h5 {
+		font-size: 20px;
+		text-transform: uppercase;
+		color: $secondary-color;
+		font-family: $primary-font;
+		font-weight: 100;
+	}
+	h6 {
+		font-size: 15px;
+		color: $secondary-color;
+		font-family: $primary-font;
+		font-weight: 100;
+	}
+	blockquote {
+		p {
+			font-size: 30px !important;
+			float: right;
+			color: $secondary-color;
+			font-style: italic;
+			font-family: $primary-font;
+			&:after {
+				content: "”";     
+				margin-right: -10px;
+				font-family: $primary-font;
+			}
+		}
+	}
+	@media (max-width: $medium) {
+		h1, h2, h3, h4, h5, h6 {
+			text-align: left;
+		}
+		p, h1, h2, h3, h4, h5, h6, figure {
+			padding: 0;
+		}
+	}
+}
+
+.type-post .entry-header {
+	&.has-featured-image {
+		background-position:center !important;
+	}	
+	h1 {
+		font-size: 50px;
+		display: inline-block;
+		padding: 20px;
+		position: relative;
+		top: 225px;	
+		color: $white;
+		background: $black;		
+	}
+}
+
+
+
+.wp-caption-text {
+	color: $secondary-color;
+	font-size: 12px;
+	font-family: $secondary-font;
+	font-style: italic;
+}
+
+img {
+	&.alignnone, &.size-full {
+		margin: 5% 0;
+		@media (max-width: $medium-large) {
+			width: inherit !important;
+			height: inherit !important;
+		}
+	}
+	@media (max-width: $large) {
+		&.aligncenter {
+			margin: 0 auto;
+		}
+		&.full-width {
+			width: inherit !important;
+			height: inherit !important;
+			margin: 0 20%;
+		}
+	}
+}
+
+figure {
+	&.gallery-item {
+		margin-top: -35px;
+		margin-bottom: 0;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	@media (max-width: $large) {
+		width: 100%;
+	}
+}
+
+img, figure {
+	&.alignleft {
+		float: left;
+		margin: 0 2.5% 0 0;		
+	}
+	&.alignright {
+		float: right;
+		margin: 0 0 0 2.5%;
+	}
+	&.aligncenter {	
+		margin: 0 auto;
+		display: block;
+	}
+	@media (max-width: $medium-large) {
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+}
+
+.gallery-caption {
+	position: relative;
+	font-size: 20px;
+	top: -85px;
+	padding: 20px;
+	display: inline;
+	color: white;
+	font-style: normal;
+	font-family: $primary-font;
+	font-weight: 400;
+	vertical-align: bottom;
+}
+
+
+// TODO: FIND OUT WHERE THESE ARE GENERATED. 
+.post-navigation, #commentform p:first-child {
+	display: none;
+}
+
+

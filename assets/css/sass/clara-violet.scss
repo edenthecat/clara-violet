@@ -1,0 +1,166 @@
+/**
+ * Clara Violet
+ * edenrohatensky.com
+ *
+ * Copyright (c) 2015 Eden Rohatensky
+ * Licensed under the GPLv2+ license.
+ */
+
+ @import 'config.scss';
+ @import 'entries.scss';
+ @import 'woocommerce.scss';
+ @import 'front-page.scss';
+ @import 'categories.scss';
+ @import 'widgets.scss';
+
+body {
+    background: linear-gradient(#fefefe, #f7f5f7);
+    body: #464646;
+}
+ #page {
+ 	width: 80%;
+ 	margin: 0 auto;
+ 	@media(max-width: $medium-large) {
+ 		width: 100%;
+ 		margin: 0 0;
+ 	}
+ }
+
+ .masthead {
+ 	width: 70%;
+ 	float: left;
+ 	p, h1 {
+ 		display: inline;
+ 		font-size: 30px;
+ 		a {
+ 			text-decoration: none;
+ 			color: $primary-color;
+ 			font-family: $primary-font;
+ 			text-transform: uppercase;
+ 			font-weight: bold;
+ 		}
+ 	}
+ 	@media(max-width: 480px) {
+ 		width: 60%;
+ 	}
+ }
+
+ .navigation {
+ 	width: 30%;
+ 	float: left;
+ 	text-align: right; //test
+ 	.nav-menu {
+ 		li {
+ 			font-size: 20px;
+ 			list-style: none;
+ 			border-top: 2px solid $primary-color;
+ 		}
+ 		a {
+ 			font-family: $primary-font;
+ 			text-decoration: none;
+ 			text-transform: uppercase;
+ 			color: $primary-color;
+ 			&:hover { color: $secondary-color}
+ 		}
+ 	}
+ 	@media(max-width: 480px) {
+ 		width: 40%;
+ 	}
+ }
+
+ #content {
+ 	clear: left;
+ 	border-top: 2px solid $primary-color;
+ 	padding-top: 2.5%;
+ }
+
+
+
+ 
+
+
+
+
+ .footer-navigation {
+ 	text-align: left;
+ }
+
+
+footer {
+    clear: both;
+    padding-top: 5%;
+    .footer {
+    	border-top: 2px solid $black;
+	}
+}
+
+ul.footer-menu {
+    list-style-type: none;
+    padding: 0px;
+    font-family: Oswald;
+    float: left;
+}
+
+.footer-menu li {
+    display: inline-block;
+    padding-right: 2.5%;
+    a {
+    	color: $black;
+    	&:hover { color: $secondary-color; }
+	}
+}
+
+ // TO REFACTOR
+
+
+
+
+.widget-area h3 a {
+    color: $black;
+    font-size: 25px;
+}
+
+.widget-area h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+p.srp-post-date {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+a.srp-post-stringbreak-link {
+    color: $secondary-color;
+    font-style: italic;
+    font-family: $secondary-font;
+}
+
+span.gigpress-sidebar-date {
+    display: block;
+    border-bottom: 1px solid $secondary-color;
+    padding-bottom: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.widget-area h2 {
+    text-transform: uppercase;
+    color: white;
+    background-color: $black;
+    padding: 1.5%;
+    border-left: 5px solid $secondary-color;
+}
+
+
+.home_categories li a span:after {
+    content: " >>";
+}
+
+.home_categories li a span:hover {
+    color: grey;
+}
+
+
+ 

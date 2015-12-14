@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic|Open+Sans:400,600,400italic|Oswald:400,700,300);
+
+$primary-font: "Oswald", Helvetica, Arial, sans-serif;
+$secondary-font: "Arvo", Helvetica, Arial, sans-serif;
+$font-family-text: "Open Sans", Helevetica, Arial, sans-serif;
+
+body {
+	font-family: $font-family-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $black;
+}
+
+h1, h2, h3 {
+	font-family: $primary-font;
+}
+
+h4, h5, h6 {
+	font-family: $secondary-font;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
